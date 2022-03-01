@@ -20,13 +20,17 @@ export const Navbar = () => {
 
   const handleClick = () => {
     setActive(!active);
+    print(active)
+    this.setState({
+      bgColor: "red"
+    })
   };
 
   return (
     <>
       <nav id="nav">
         <div id="first">
-          <Link href="/">
+          <Link onClick={handleClick} href="/">
             <a>E-Commerce MarketPlace</a>
           </Link>
         </div>

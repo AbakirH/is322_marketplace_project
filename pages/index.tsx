@@ -1,12 +1,11 @@
-import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { Products } from "../types";
+
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
 
-const Home: NextPage<{ products: Products[] }> = ({ products }) => {
+function Home() {
   return (
     <div id="home" className={styles.container}>
       <Head>
@@ -15,24 +14,16 @@ const Home: NextPage<{ products: Products[] }> = ({ products }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <div id="content">
-        {products.map((products) => {
-          return <li key={products.id}>{products.title}</li>;
-        })}
+      <div className="content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, fuga dolor esse ab hic aperiam ipsam consequuntur cupiditate veniam dicta maiores cum modi asperiores amet omnis quae neque, ut perferendis.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque optio maxime dolores placeat? Culpa nisi facilis mollitia ad, commodi architecto blanditiis nihil earum suscipit ipsa magnam corporis? Nemo, magni.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora assumenda repellat distinctio, officiis expedita unde, voluptates minus reprehenderit veniam similique, aut asperiores magni pariatur vitae voluptatibus odio esse quisquam. Natus.
+        </p>
       </div>
       <Footer />
     </div>
   );
 };
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  const res = await fetch("https://fakestoreapi.com/products");
-  const products: Products = await res.json();
 
-  return {
-    props: {
-      products: products,
-    },
-  };
-};
 export default Home;

@@ -19,19 +19,19 @@ export const Footer = () => {
             {/* Column2 */}
             <div className="col">
               <h4>Services</h4>
-              <ui className="list-unstyled">
+              <ul className="list-unstyled">
                 <li>Purchase</li>
                 <li>Products</li>
-              </ui>
+              </ul>
             </div>
             {/* Column3 */}
             <div className="col">
               <h4>Social Media</h4>
-              <ui className="list-unstyled">
+              <ul className="list-unstyled">
                 <li>Instgram</li>
                 <li>Facebook</li>
                 <li>Twitter</li>
-              </ui>
+              </ul>
             </div>
           </div>
           <hr />

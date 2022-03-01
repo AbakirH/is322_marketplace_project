@@ -103,12 +103,14 @@ nav.contact .Contact {
   .switch {
     color: aqua;
     border-style: solid;
-    border-width: 0.5px;
-    border-color: green;
+    border-width: 0.5px 1px 0.5px 1px;
+    border-color: black;
     padding: 0%;
     width: 25vw;
+    height: 25px;
     background-color: #5597b4;
     padding: 1.2% 0% 1.2% 0%;
+    display: flex;
   }
   #cool {
     width: 100%;
@@ -122,7 +124,6 @@ nav.contact .Contact {
     justify-content: flex-start;
     align-items: center;
   }
-
   ul {
     width: 100%;
     padding: 0%;
@@ -142,5 +143,10 @@ nav.contact .Contact {
   .slide-fade-leave-to {
     transform: translateY(-50px);
     opacity: 0;
+  }
+}
+@media only screen and (max-width: 330px) {
+  .switch {
+    width: 45vw;
   }
 }
