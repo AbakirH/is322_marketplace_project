@@ -19,7 +19,7 @@ const Card: NextPage<{ products: Products[] }> = ({ products }) => {
               </div>
               <div className="cardInfo">
                 <h2>{product.title}</h2>
-                <p>{product.price}</p>
+                <p>Price: {product.price}</p>
               </div>
             </div>
           );

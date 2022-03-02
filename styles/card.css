@@ -7,13 +7,18 @@
 .cardBox {
   width: 30%;
   /* height: 45%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   outline: auto;
   margin: 1%;
 }
 .imgBox {
   display: flex;
   width: 100%;
+  height: 100%;
   justify-content: center;
+  align-items: center;
   align-items: center;
 }
 .cardInfo {
@@ -28,10 +33,11 @@
 }
 .cardInfo > p {
   width: 70%;
+  text-align: center;
 }
 .cardImageSize {
   width: 50%;
-  height: 50%;
+  height: 60%;
 }
 
 @media only screen and (max-width: 670px) {
