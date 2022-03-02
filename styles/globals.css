@@ -35,7 +35,9 @@ body {
 #introduction {
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 #introduction > p {
   width: 90vw;

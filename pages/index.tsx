@@ -20,6 +20,7 @@ function Home({ products }: { products: any }) {
       <div className="content">
         <Carousel products={products} />
         <div id="introduction">
+          <h1>Our mission at E-Commerce MarketPlace</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, fuga
             dolor esse ab hic aperiam ipsam consequuntur cupiditate veniam dicta
