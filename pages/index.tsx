@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 
 import { Navbar } from "../components/Navbar";
 import { Footer } from "../components/Footer";
+import Carousel from "../components/Carousel";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       </Head>
       <Navbar />
       <div className="content">
+        <Carousel/>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, fuga dolor esse ab hic aperiam ipsam consequuntur cupiditate veniam dicta maiores cum modi asperiores amet omnis quae neque, ut perferendis.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque optio maxime dolores placeat? Culpa nisi facilis mollitia ad, commodi architecto blanditiis nihil earum suscipit ipsa magnam corporis? Nemo, magni.
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora assumenda repellat distinctio, officiis expedita unde, voluptates minus reprehenderit veniam similique, aut asperiores magni pariatur vitae voluptatibus odio esse quisquam. Natus.
