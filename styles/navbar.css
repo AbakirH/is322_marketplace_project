@@ -124,12 +124,7 @@ nav.contact .Contact {
     justify-content: flex-start;
     align-items: center;
   }
-  ul {
-    width: 100%;
-    padding: 0%;
-    margin: 0%;
-    list-style-type: none;
-  }
+
   .slide-fade-enter-active {
     transition: all 0.3s ease;
   }

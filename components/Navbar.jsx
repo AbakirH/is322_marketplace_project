@@ -1,7 +1,7 @@
 /*  ./components/Navbar.jsx     */
 import Link from "next/link";
 import { useState } from "react";
-import { MobileNav } from "../components/MobileNav";
+import { MobileNav } from "./MobileNav";
 const items = [
   {
     id: 1,
@@ -20,10 +20,10 @@ export const Navbar = () => {
 
   const handleClick = () => {
     setActive(!active);
-    print(active)
+    print(active);
     this.setState({
-      bgColor: "red"
-    })
+      bgColor: "red",
+    });
   };
 
   return (
